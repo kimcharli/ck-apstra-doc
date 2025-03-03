@@ -40,6 +40,10 @@ This documentation is built using Jekyll and can be tested locally before deploy
    - Open your browser and navigate to `http://localhost:4000`
    - Changes to the files will automatically rebuild the site
 
+## github project setting
+
+Pages - Branch: main, /
+
 ## Project Structure
 
 https://jekyllrb.com/docs/structure/
