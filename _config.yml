@@ -1,0 +1,68 @@
+# https://jekyllrb.com/docs/configuration/default/
+#lsi: false
+safe: true
+#source: ./_site
+#incremental: false
+#highlighter: rouge
+gist:
+  noscript: false
+
+title: CK Apstra API
+description: Documentation for CK Apstra API
+show_downloads: true
+baseurl: "/ck-apstra-doc"  # Match your GitHub repository name
+url: "https://kimcharli.github.io/ck-apstra-doc/"  # This GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  input: GFM
+  parse_block_html: true
+  syntax_highlighter_opts:
+    disable: true
+
+remote_theme: pages-themes/leap-day@v0.2.0  # Changed to Leap Day
+
+# Plugin settings
+plugins:
+  # - jekyll-feed  # Remove if Leap Day includes its own
+  # - jekyll-seo-tag # Remove if Leap Day includes its own
+  - jekyll-remote-theme
+
+# Include assets directory
+include:
+  - assets
+  - assets/css
+
+# Sass/SCSS processing
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# default
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default" # Default layout for all pages
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post" # Default layout for posts
+
+# Permalinks
+# permalink: pretty
+
+# Other settings
+social:
+  twitter: your_twitter_handle
+  github: your_github_username
